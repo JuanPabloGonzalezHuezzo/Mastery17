@@ -1,0 +1,26 @@
+# Mastery17
+//This code was in a google image (https://www.google.com.mx/search?q=switch+in+c%2B%2B+example&source=lnms&tbm=isch&sa=X&ei=5LdKVbnUKYK0yASWuoHwBg&ved=0CAcQ_AUoAQ&biw=1536&bih=755#imgrc=OPrU21prw110FM%253A%3BSholEEgd48TF0M%3Bhttp%253A%252F%252Fi.ytimg.com%252Fvi%252FUdWssY1ESxI%252Fmaxresdefault.jpg%3Bhttp%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DUdWssY1ESxI%3B1280%3B720)
+#include <iostream>
+using namespace std;
+int main(){
+char edad;
+  cout << "mete la letra correspondiente a tu edad.\n"
+        "(A) menor a 17 años. \n"
+        "(B) enter 18 y 67 años\n"
+        "(C) mayor a 67 años\n" << endl;
+  cin >> edad;
+
+  cout << "tu boleto costará: ";
+  switch (edad){
+    case 'A': cout << "5 pesos";
+    break;
+    case 'B': cout << "50 pesos";
+    break;
+    case 'C': cout << "5 pesos";
+    break;
+    default: cout << "Tu respuesta es inválida, introduce tu edad,";
+    break;
+  }
+
+return 0;
+}
